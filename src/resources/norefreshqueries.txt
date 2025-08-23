@@ -1,0 +1,6 @@
+sematorlesX01sysadmin@engedelyezettsema@jogcsoportID?semaidX01
+delete from #$0.#%0 
+where #$0.#%0.#&0 = \-$jj\- 
+and #$0.#%0.#&1 = \-$jj2\-
+X88semahozzaadasX01sysadmin@engedelyezettsemaX01
+insert into #$0.#%0 values (\-$oszl\-, \-$oszl2\-);
