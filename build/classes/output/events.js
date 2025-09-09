@@ -21,14 +21,16 @@ export const exportedRetnMethods = {
 }
 
 function doFrissit(retns){
-////console.log("Sört akarok!")
-////console.log(retns.length)
+//console.log("Sört akarok!")
+//console.log(retns.length)
     let result = "";
-    for(let i = retns.length-1; i > -1 ; i--){// "al;ko;szil|||1:::ajkarepo:::ala:::;;;1:::uqherguear:::ame;;;2:::argergoekq:::NN:::;;;1:::aareerear:::RR"
-////console.log("Sört akarok!: " + i)
+    for(let i = retns.length-1; i > -1 ; i--){ // "al;ko;szil|||1:::ajkarepo:::ala:::;;;1:::uqherguear:::ame;;;2:::argergoekq:::NN:::;;;1:::aareerear:::RR"
+//console.log("Sört akarok!: " + i);
         let elozo = window.performance.now();
-        retns[i].innerHTML = '';
-        result = doUjratolt(retns[i].getAttribute("cjust"));
+       // retns[i].innerHTML = ''; //
+        const cja=retns[i].getAttribute("cjust");
+//console.log("cjust: " + cja);
+        result = doUjratolt(cja);
 //console.log(result);
         retns[i].innerHTML = result.substring(1, result.length);
     }
@@ -37,15 +39,18 @@ function doFrissit(retns){
 function doUjratolt(cjust="", responseInput=0){
     let res = [];
     const two = retnCombinations[cjust]?.split("|||");
+console.log("GEVI");
+console.log()
     if(!two || two.length<2){
+console.log("GEVIS");
         return;
     }
+console.log("GEVI");
     const metnames = two[0].split(":");
     const templeBefs = [];
     const templeUsq = [];
     const befRowsNum = [];
     let templeLast = -1;
-
     let yeP = 0;
     const ye = two[1]?.split("---");
     const yelen = ye.length-1;
@@ -53,7 +58,8 @@ function doUjratolt(cjust="", responseInput=0){
     for(const cja of ye){
 ////console.log("Igen")
         if(cja.length > 10){
-////console.log("Igen")
+//console.log("Igen.")
+//console.log(cja)
             const methods = [];
             for(let i = 0; i < 8; i+=2){
                 const metnum = Number("0x"+cja.substring(i,i+2));
@@ -104,19 +110,19 @@ function doUjratolt(cjust="", responseInput=0){
                             resultQ.push(templeUsq[hirF]);
 //console.log("Cloth");
 ////console.log("FEEEEELTOOOOOLT!!!\n");
-//console.log(resultBef)
+//console.log(resultBef);
                             resultsBefRowsNums.push(befRowsNum[hirF]);
                         }
                         else{
-//console.log("Ahn!")
+//console.log("Ahn!");
                             whereBef[lastResBefIndex]--; // Utolsó hiba: --2025. 08. 08. 15:46--
                         }
 ////console.log("MATAAAA:"+ mata);
                         if(mata < 1){
                             befIlter.push(matre.length);
-////console.log("FELTÖLTÉÉÉÉÉÉÉS!")
+////console.log("FELTÖLTÉÉÉÉÉÉÉS!");
                             for(let mat = 1; mat < matre.length; mat++){
-////console.log("BRUHHHHH")
+////console.log("BRUHHHHH");
                                 befIlter.push(isNaN(matre[mat]) ? matre[mat] : Number(matre[mat]));
                             }
                         }
@@ -124,8 +130,8 @@ function doUjratolt(cjust="", responseInput=0){
                     }
                     mata++;
                 }
-////console.log("Halál:W")
-////console.log(whereBef)
+////console.log("Halál:W");
+////console.log(whereBef);
                 templeBefs.push(whataf(
                     templeUsq[templeLast], methods, 
                     resrownums, resultBef, resultsBefRowsNums, resultQ, 
@@ -134,8 +140,10 @@ function doUjratolt(cjust="", responseInput=0){
                 befRowsNum.push(resrownums);
             }
             else{
-////console.log("doUjrtolt->els")
+////console.log("doUjrtolt->els");
                 const resrownums = [];
+//console.log("FKKKKKK:");
+//console.log(templeUsq[templeLast]),
                 templeBefs.push(whataf(
                     templeUsq[templeLast], methods, resrownums
                 ));
@@ -150,11 +158,11 @@ function doUjratolt(cjust="", responseInput=0){
         szen += "\n"+i+". "+ templeBefs[0].substring(befRowsNum[0][i], befRowsNum[0][i+1]);
     }
     console.log(szen);*/
-////console.log("Ki is jön.")
+////console.log("Ki is jön.");
     //whataf(retn, responseInput, responseInputType);
     // await doFrissit();
     // addEvents(retn);
-////console.log(templeLast +":"+templeBefs.length)
+////console.log(templeLast +":"+templeBefs.length);
 
     return templeLast > -1 ? templeBefs[templeLast] : "";
 }
@@ -248,21 +256,21 @@ console.log(befFilters)
                         for(qruak = memqruak; ortami && qruak < memqruak+qruakLiminal-1; qruak += 2){ // befFilters
                             ortami = resPlit[i+befFilters[qruak]] === 
                                 fra[usqTitem + befFilters[qruak+1]];
-                            console.log(qruak +". BEFIF: "+ortami+"---"+resPlit[i+befFilters[qruak]]+"---"+fra[usqTitem + befFilters[qruak]])
+console.log(qruak +". BEFIF: "+ortami+"---"+resPlit[i+befFilters[qruak]]+"---"+fra[usqTitem + befFilters[qruak]])
 //console.log("usqTrow: " + resPlit[i+befFilters[qruak]] +":"+fra[usqTrow + befFilters[qruak]])
                         }
-                        if(ortami) 
-                            console.log("OLOME: " + actualBef.substring(befrownums[usqT][usqTrow-1], befrownums[usqT][usqTrow]))
-                        ;
+                        if(ortami){
+console.log("OLOME: " + actualBef.substring(befrownums[usqT][usqTrow-1], befrownums[usqT][usqTrow]));
+                        }
                         if(ortami != memoryRef){
-                            console.log("UsqTRow: " + usqT+":"+usqTrow+":"+befrownums[usqT][usqTrow]);
+console.log("UsqTRow: " + usqT+":"+usqTrow+":"+befrownums[usqT][usqTrow]);
 //console.log("Ortami: "+ortami+". memom: " + memoryRef)
 //console.log("OO: " +usqT+":"+usqTrow);
                             qruakArray.push(usqTrow);
                             //Szétválasztás, csoportosítás
                             memoryRef = ortami;
                         }
-                        console.log(memoryRef)
+console.log(memoryRef)
                     }
                     if(usqTrow>0 && qruakArray.length & 1 == 1) 
                         qruakArray.push(usqTrow)
@@ -279,17 +287,17 @@ console.log(befFilters)
                             qruakArray[qruakResult], qruakArray[qruakResult + 1]
                         );
                     }*/
-                   console.log(qruakArray)
+console.log(qruakArray)
                     let szen = "";
                     for(let qere = 0; qere<qruakArray.length; qere+=2){
-                        console.log("Qqere: " + qruakArray[qere] + "\nQqere2: " + qruakArray[qere+1])
+console.log("Qqere: " + qruakArray[qere] + "\nQqere2: " + qruakArray[qere+1])
                         szen += "\n"+qere+". "+ actualBef.substring(
                             befrownums[usqT][qruakArray[qere]], 
                             befrownums[usqT][qruakArray[qere+1]]
                         );
                     }
-                   console.log("Szen")
-                   console.log(szen);
+console.log("Szen")
+console.log(szen);
                     resultsBef[resLast] += szen;
 
 

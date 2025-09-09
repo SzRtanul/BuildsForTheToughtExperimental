@@ -1,7 +1,12 @@
 export const formDRef = [
     "1-0",
     "1-1",
+    "1-2",
+    "1-3"
+];
 
+export const retnDRef = [
+    
 ];
 
 export const retnCombinationTemplates = {
@@ -39,6 +44,15 @@ export const retnCombinations = {
     fajlist: retEx[0]("300"),
     pg_class: retEx[0]("302"),
     pg_type: retEx[0]("303"),
+    pg_views: retEx[0]("305"),
+    felh: retEx[0]("306"),
+    pg_namespace: retEx[0]("307"),
+    pg_columns: retEx[0]("308"),
+    pg_proc: retEx[0]("002"),
+    pg_procpro: retEx[0]("008"),
+    profile: "getDataLength:theadevcslist:tablerow:tbodyend|||00FFFFFF;",
+    profilev: retEx[0]("309"),
+    personev: retEx[0]("30A")
 }
 
 export const retnCombinationResults = {

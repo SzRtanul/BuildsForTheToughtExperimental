@@ -7,8 +7,8 @@ inner join #$0.#%0 on #$0.#%0.#&0=#$1.#%2.#&5)
 inner join #$1.#%1 on #$1.#%1.#&2=#$1.#%2.#&4)
 X88nspX01pg_catalog@pg_namespace@oid?nspnameX01
 SELECT * FROM #$0.#%0
-X88procX01pg_catalog@pg_namespace?pg_proc@oid?nspnameX01
-select * FROM #$0.#%1
+X88procX01pg_catalog@pg_proc@oid?pronamespace?proname?proargtypes@@X01
+select #$0.#%0#&0, #$0.#%0#&1, #$0.#%0#&2, #$0.#%0#&3  FROM #$0.#%0
 X88jogcsoportX01sysadmin@jogcsoportX01
 select * FROM #$0.#%0
 X88etetesX01admin@etetesX01
@@ -19,3 +19,11 @@ X88alanyX01admin@alanyX01
 select * FROM #$0.#%0
 X88fajX01admin@fajX01
 select * FROM #$0.#%0
+X88procproX01pg_catalog@pg_proc?pg_aggregate@
+oid?pronamespace?proname?proargtypes?proisagg?aggfnoid@pg_get_functiondef@funcsrc?p?aX01
+----------------------------------------------------------------------------------------------------------
+select #(1.#&0, #(1.#&1, #(1.#&2, #(1.#&3, #$0.#'0(#(1.#&0) FROM #$0.#%0 #(1
+LEFT JOIN #$0.#%1 #(2 ON #(2.#&5 = #(1.#&0
+WHERE #(2.#&5 IS NULL
+ORDER BY #(1.#&1 DESC;
+----------------------------------------------------------------------------------------------------------

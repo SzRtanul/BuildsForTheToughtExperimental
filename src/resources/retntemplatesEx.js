@@ -1,7 +1,12 @@
 export const formDRef = [
     "1-'!NQTsematorles'",
     "1-'!NQTsemahozzaadas'",
+    "1-'!NQTregistration'",
+    "1-'!NQTlogin'"
+];
 
+export const retnDRef = [
+    
 ];
 
 export const retnCombinationTemplates = {
@@ -18,27 +23,36 @@ export const retnCombinations = {
     etlecta: retEx[0]("002"),
     vacsoralist: 
         "theadevcslist:tablerow:tbodyend:vcstablerow|||" +
-        "01FFFFFF;0'+GQTmegetetett---FFFFFFFF;F---FFFFFFFF;F---030002FF;0'+GQTetetes;0-0=0",
-    eatedlist: retEx[0]("0'+GQTmegetetett"),
+        "01FFFFFF;0'+GQTmegetetett'---FFFFFFFF;F---FFFFFFFF;F---030002FF;0'+GQTetetes';0-0=0",
+    eatedlist: retEx[0]("0'+GQTmegetetett'"),
     etlecta2: 
         "theade:tablerow:tbodyend:withselect:seloption|||" +
-        "04FFFFFF;0'+GQTnsp---04FFFFFF;0'+GQTproc---030002FF;0'+GQTnsp-0:0-3-3-0-0",
+        "04FFFFFF;0'+GQTnsp'---04FFFFFF;0'+GQTproc'---030002FF;0'+GQTnsp'-0:0-3-3-0-0",
     kolost: 
         "omla:ini:enela:kala;|||FFFFFFFF;3FF;"+
         "2-1=12,3-1=12:2-1=12,3-1=12:---",
     ujvacsora:
         "sela|||"+
-        "00FFFFFF;0'+GQTnsp",
+        "00FFFFFF;0'+GQTnsp'",
     nemtudni: 
         "retndiv:retndivhead|||"+
-        "0001FFFF;0'+GQTnsp",
+        "0001FFFF;0'+GQTnsp'",
     oklamaha:
         "retrerown:retrehen:retrefoot:retreopt|||" +
-        "03FFFFFF;003---03FFFFFF;0'+GQTnsp---000102FF;200-:_-:_-0:1",
-    alanylist: retEx[0]("0'+GQTalany"),
+        "03FFFFFF;003---03FFFFFF;0'+GQTnsp'---000102FF;200-:_-:_-0:1",
+    alanylist: retEx[0]("0'+GQTalany'"),
     fajlist: retEx[0]("300"),
     pg_class: retEx[0]("302"),
     pg_type: retEx[0]("303"),
+    pg_views: retEx[0]("305"),
+    felh: retEx[0]("306"),
+    pg_namespace: retEx[0]("307"),
+    pg_columns: retEx[0]("308"),
+    pg_proc: retEx[0]("0'+GQTproc'"),
+    pg_procpro: retEx[0]("0'+GQTprocpro'"),
+    profile: "getDataLength:theadevcslist:tablerow:tbodyend|||00FFFFFF;",
+    profilev: retEx[0]("309"),
+    personev: retEx[0]("30A")
 }
 
 export const retnCombinationResults = {

@@ -60,7 +60,7 @@ public class BuildsForTheToughtsExperimental {
                     }
                     fileText += ",\n";
                     repltext = repltext.replaceAll("\\'\\!" + v[2] + v3[0] + "'", i+"");
-                    repltext = repltext.replaceAll("\\'\\+" + v[2] + v3[0], String.format("%02X", i));
+                    repltext = repltext.replaceAll("\\'\\+" + v[2] + v3[0] + "'", String.format("%02X", i));
                     i++;
                 }
             }

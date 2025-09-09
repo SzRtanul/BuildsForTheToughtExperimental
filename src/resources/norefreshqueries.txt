@@ -4,3 +4,9 @@ where #$0.#%0.#&0 = \-$jj\-
 and #$0.#%0.#&1 = \-$jj2\-
 X88semahozzaadasX01sysadmin@engedelyezettsemaX01
 insert into #$0.#%0 values (\-$oszl\-, \-$oszl2\-);
+X88registrationX01lobby@felhasznaloview@@@@felhasznalonev?email?jelszohash?sysadminX01
+insert into #$0.#%0 (#)0, #)1, #)2) values (#-username, #-emailaddress, #-userpassword);
+X88loginX01lobby@@@loginX01
+select #$0.#'0(#-username, #-jelszoHash);
+X88insertprofileX01users@personview@@@@id?kodnev?nev?nem?szuletes?fajidX01
+insert into #$0.#%0 () values (\-$id\-, #$-kodnev, #$-nev, '\-$bit\-', , \-$fajID\-);
