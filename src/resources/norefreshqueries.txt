@@ -9,4 +9,4 @@ insert into #$0.#%0 (#)0, #)1, #)2) values (#-username, #-emailaddress, #-userpa
 X88loginX01lobby@@@loginX01
 select #$0.#'0(#-username, #-jelszoHash);
 X88insertprofileX01users@personview@@@@id?kodnev?nev?nem?szuletes?fajidX01
-insert into #$0.#%0 () values (\-$id\-, #$-kodnev, #$-nev, '\-$bit\-', , \-$fajID\-);
+insert into #$0.#%0 (#(0, #(1, #(2, #(3, #(4) values (\-$id\-, #$-kodnev, #$-nev, '\-$bit\-', '\-$szuletes\-', \-$fajID\-);
